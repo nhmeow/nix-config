@@ -2,13 +2,13 @@
   # default vars
   host = {
     # Your name
-    name = "example";
+    name = "meow";
     # Your nickname (currently used as git name)
-    nickname = "example";
+    nickname = "Barren Cat";
     # Your email
-    email = "demo@example.com";
+    email = "i@nhm.cat";
     # If you want git to use gpg, you can fill in the key id here
-    signKey = "";
+    signKey = "A3058025F67F4C45";
     # Fill in the key that all your hosts trust. 
     # Note that they have large permissions and need to be saved offline.
     authorizedKeys.keys = [ ];

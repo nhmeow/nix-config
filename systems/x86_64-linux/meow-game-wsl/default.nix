@@ -2,7 +2,7 @@
   # If you have hardware.nix, please copy and import it.
   # You can use `nixos-generate-config` to generate
   # path: /etc/nixos/hardware-configuration.nix
-  # imports = [ ./hardware.nix ];
+  imports = [ ./hardware.nix ];
 
   cattery = {
     room.desktop.wsl.enable = true;
@@ -15,6 +15,9 @@
       # Enable cross-compilation so that you can build other versions
       # This is not a necessary option, just to compile arm with wsl.
       boot.binfmt.enable = true;
+    };
+    cli-apps.security = {
+      gnupg.enable = false;
     };
   };
 

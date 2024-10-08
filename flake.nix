@@ -33,10 +33,8 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # Replace this with your host's secret, which can be generated using this template
-    # https://github.com/nixcafe/develop-my-secrets
-    my-secrets = {
-      url = "github:nixcafe/develop-my-secrets";
+    meow-secrets = {
+      url = "github:nhmeow/meow-secrets";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
