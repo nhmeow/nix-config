@@ -51,10 +51,10 @@
         src = ./.;
 
         snowfall = {
-          namespace = "example";
+          namespace = "cute";
           meta = {
-            name = "example-flake";
-            title = "example' Nix Flakes";
+            name = "meow-flake";
+            title = "meow' Nix Flakes";
           };
         };
       };

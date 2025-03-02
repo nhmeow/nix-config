@@ -17,7 +17,7 @@
       boot.binfmt.enable = true;
     };
     cli-apps.security = {
-      gnupg.enable = false;
+      gnupg.agent.enable = false;
     };
   };
 
