@@ -3,13 +3,19 @@
 # Get editor completions based on the config schema
 "$schema" = 'https://starship.rs/config-schema.json'
 
+format = """$directory[<](dimmed white)[V](#5b99ff)[>](dimmed white) $all"""
+continuation_prompt = '[⊢](#888888) '
+
+command_timeout = 3000
+
 # Inserts a blank line between shell prompts
 add_newline = true
 
-# Replace the '❯' symbol in the prompt with '➜'
-[character] # The name of the module we are configuring is 'character'
-success_symbol = '[➜](bold green)' # The 'success_symbol' segment is being set to '➜' with the color 'bold green'
+# Replace the '❯' symbol in the prompt with '𝞅'
+[character]
+success_symbol = '[𝞅](#F18D00)' # φ (greek small letter phi)
+error_symbol = '[F](bold red)'
 
-# Disable the package module, hiding it from the prompt completely
-[package]
-disabled = true
+[username]
+show_always = true
+format = '[$user]($style) '
